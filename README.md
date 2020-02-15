@@ -14,7 +14,7 @@ By following these instructions, you'll execute the following.
 5. Update Ubuntu & install relevant components (Git, Valgrind, G++, Nano)
 6. Update Ubuntu image with the changes you've made to that container
 
-If you already have Homebrew and Docker installed on your machine, skip to Step 3 of Installation Guide.</br>
+If you already have Homebrew and Docker installed on your machine, skip to Step 3 of Installation.</br>
 
 Does all this container and image-speak sound like nonsense to you? If so, please read the following. </br>
 
