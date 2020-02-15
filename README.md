@@ -18,7 +18,7 @@ If you already have Homebrew and Docker installed on your machine, skip to Step 
 
 Does all this container and image-speak sound like nonsense to you? If so, please read the following. </br>
 
-An image is like a GitHub repository that resides in Github.com. By creating an image, you're cloning a repository of that software on Docker's server (like forking a repository on Github).
+An image is like a GitHub repository that resides in Github.com. By creating an image, you're cloning a repository of that software on Docker's server (like forking a repository on GitHub).
 A container is when you create an instance of that image and run it. Meaning, you've cloned the forked repository to your local machine so you can make changes to it. And like Git, what do you do after you're done working with your container? You update the image with the changes you've made to the container (like pushing the changes you've made to a git repository on your local machine to the repository that resides in Github.com). Therefore, an image is like a frozen instance of your container while a container is like running an editable instance of that image. All this is to say, update your image after working on a container so that you don't lose the changes you've made!
 
 ## Installation
@@ -34,7 +34,7 @@ A container is when you create an instance of that image and run it. Meaning, yo
     - `docker images` to see your Ubuntu's image id and copy it (henceforward addressed as `yourImageID`)
 4. Create & run a container of that image
     - `docker run -it yourImageID`
-5. Your containerized Ubuntu should've started. Update it & install relevant components (Git, Valgrind, G++, Nano)
+5. Your containerized Ubuntu should've started. Update it & install relevant components (Git, Valgrind, g++, Nano)
     - `apt-get update`
     - `apt-get install git-core`
     - `apt-get install valgrind`
@@ -57,7 +57,7 @@ Now that you have an updated image of Ubuntu where you can clone git repositorie
 3. Create a folder in your Ubuntu and go to it
     - `mkdir yourFolderName`
     - `cd yourFolderName`
-4. Open up a web browser, go to your Github account, copy your clone URL to your repository (henceforward addressed as `yourCloneURL`), and clone the repository to your Ubuntu.
+4. Open up a web browser, go to your GitHub account, copy your clone URL to your repository (henceforward addressed as `yourCloneURL`), and clone the repository to your Ubuntu.
     - `git clone yourCloneURL`
 5. `cd` into the local instance of your repo. If you want to open up a file and make changes to it, all you have to do is `nano yourFileName.cpp`. If you've never used a command line text editor before, here's a useful guide for Nano (https://www.hostinger.com/tutorials/how-to-install-and-use-nano-text-editor)
 6. After you're done making changes, `g++ *.cpp` to compile
@@ -72,4 +72,4 @@ Now that you have an updated image of Ubuntu where you can clone git repositorie
 
 After having done or read all of this, you may have realized that there are some advantages and disadvantages to this approach. First, you can finally use Valgrind on your Mac! Well, kind of.. You can finally run Valgrind on your Ubuntu which runs on Docker that runs on your Mac! Despite the fact that this approach involves downloading additional software, namely Docker and its Ubuntu container, this approach is alot faster and more memory-efficient than deploying a full-on virtual machine of Ubuntu to run your programs (https://www.youtube.com/watch?v=0qotVMX-J5s). Of course, this approach also means you'll be missing out on Ubuntu's graphical user interface, but such is life...
 
-If you have any thoughts on this apporach or how I can improve it, feel free to let me know! Feel free to add me on Github, branch, fork, or clone this repository. 
+If you have any thoughts on this apporach or how I can improve it, feel free to let me know! Feel free to add me on GitHub, branch, fork, or clone this repository. 
