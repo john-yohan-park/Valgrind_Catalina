@@ -6,7 +6,7 @@ Well look no further because, lo and behold, there is a way.
 
 ## Overview
 
-By following these instructions, you'll do the following:
+By following these instructions, you'll execute the following.
 1. Install Homebrew
 2. Install & Launch Docker
 3. Create an image of Ubuntu on Docker
