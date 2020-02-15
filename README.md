@@ -1,6 +1,6 @@
 # How to use Valgrind on Catalina, Mojave, or High Sierra OS
 
-Do you love developing C++ applications on your Mac but miss having that good old Valgrind to check your program for memory leaks (since there hasn't been a released version of Valgrind supporting High Sierra OS & up)? 
+Do you love developing C++ applications on your Mac but miss having that good old Valgrind to check your program for memory leaks (since there hasn't been a released version of Valgrind supporting High Sierra & up)? 
 
 Well look no further because, lo and behold, there is a way.
 
