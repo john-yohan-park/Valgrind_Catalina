@@ -19,7 +19,7 @@ If you already have Homebrew and Docker installed on your machine, skip to Step 
 Does all this container and image-speak sound like nonsense to you? If so, please read the following. </br>
 
 An image is like a GitHub repository that resides in Github.com. By creating an image, you're cloning a repository of that software on Docker's server (like forking a repository on Github).
-A container is when you create an instance of that image and run it. Meaning, you've cloned the forked repository to your local machine, so you can make changes to it. And like working with Git, what do you do after you're done working on a container? You update the image with the changes you've made to its container (like git add, commit, push). Thus, images are like frozen instances of your containers while containers are like running and edit-able instances of that image. All this is to say, update your image after working on a container, or else you lose the changes you've made!
+A container is when you create an instance of that image and run it. Meaning, you've cloned the forked repository to your local machine so you can make changes to it. And like Git, what do you do after you're done working with your container? You update the image with the changes you've made to the container (like pushing the changes you've made to a git repository on your local machine to the repository that resides in Github.com). Therefore, an image is like a frozen instance of your container while a container is like running an editable instance of that image. All this is to say, update your image after working on a container so that you don't lose the changes you've made!
 
 ## Installation Steps
 
