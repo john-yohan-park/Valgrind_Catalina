@@ -12,11 +12,11 @@ By following these instructions, you'll execute the following.
 3. Create an image of Ubuntu on Docker
 4. Create & run a container of that image
 5. Update Ubuntu & install relevant components (Git, Valgrind, G++, Nano)
-6. Update Ubuntu image with the changes you've made to your Ubuntu container
+6. Update Ubuntu image with the changes you've made to that container
 
-And that's all! If you already have Homebrew or Docker installed on your machine, skip to step 3.</br></br>
+If you already have Homebrew or Docker installed on your machine, skip to step 3.</br></br>
 
-If you don't have a sufficient understanding of what an "image" or a "container" is, read the following: </br>
+Does all this container and image-speak sound like jibberish to you? If so, please read the following. </br>
 Think of an image as a GitHub repository. By creating an image, you're essentially cloning a repository of that software on Docker's server (like forking a repository on Github). 
 A container is when you create an instance of that image and run it. Meaning, you've cloned the forked repository to your local machine, so you can make changes to it. And like working with Git, what do you do after you're done working on a container? You update the image with the changes you've made to its container (like git add, commit, push). Thus, images are like frozen instances of your containers while containers are like running and edit-able instances of that image. All this is to say, update your image after working on a container, or else you lose the changes you've made!
 
