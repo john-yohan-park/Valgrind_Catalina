@@ -57,7 +57,7 @@ Now that you have an updated image of Ubuntu where you can clone git repositorie
 3. Create a folder in your Ubuntu and go to it
     - `mkdir yourFolderName`
     - `cd yourFolderName`
-4. Open up a web browser, go to your GitHub account, copy your clone URL to your repository (henceforward addressed as `yourCloneURL`), and clone the repository to your Ubuntu.
+4. Open up a web browser, go to your GitHub account, copy the clone URL to your repository (henceforward addressed as `yourCloneURL`), and clone the repository to your Ubuntu.
     - `git clone yourCloneURL`
 5. `cd` into the local instance of your repo. If you want to open up a file and make changes to it, all you have to do is `nano yourFileName.cpp`. If you've never used a command line text editor before, here's a useful guide for Nano (https://www.hostinger.com/tutorials/how-to-install-and-use-nano-text-editor)
 6. After you're done making changes, `g++ *.cpp` to compile
