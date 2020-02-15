@@ -72,4 +72,4 @@ Now that you have an updated image of Ubuntu where you can clone git repositorie
 
 After having done or read all of this, you may have realized that there are some advantages and disadvantages to this approach. First, you can finally use Valgrind on your Mac! Well, kind of... You can finally run Valgrind on your Ubuntu which runs on Docker that runs on your Mac! Despite the fact that this approach involves downloading additional software, namely Docker and its Ubuntu container, this approach is alot faster and more space-efficient than deploying a full-on virtual machine to run your programs (https://www.youtube.com/watch?v=0qotVMX-J5s). Of course, this approach also means you'll be missing out on Ubuntu's graphical user interface, but `¯\_(ツ)_/¯`
 
-If you have any thoughts on this approach or how I can improve it, feel free to let me know! Feel free to add me on GitHub (follow4follow broski or brosephina), branch, fork, or clone this repo. 
+If you have any thoughts on this approach or how I can improve it, feel free to let me know! Feel free to add me on GitHub (follow4follow broski or brosephine), branch, fork, or clone this repo. 
