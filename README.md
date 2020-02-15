@@ -21,7 +21,7 @@ Does all this container and image-speak sound like nonsense to you? If so, pleas
 An image is like a GitHub repository that resides in Github.com. By creating an image, you're cloning a repository of that software on Docker's server (like forking a repository on Github).
 A container is when you create an instance of that image and run it. Meaning, you've cloned the forked repository to your local machine so you can make changes to it. And like Git, what do you do after you're done working with your container? You update the image with the changes you've made to the container (like pushing the changes you've made to a git repository on your local machine to the repository that resides in Github.com). Therefore, an image is like a frozen instance of your container while a container is like running an editable instance of that image. All this is to say, update your image after working on a container so that you don't lose the changes you've made!
 
-## Installation Guide
+## Installation
 
 1. Install Homebrew
     - open up your Terminal
@@ -46,7 +46,7 @@ A container is when you create an instance of that image and run it. Meaning, yo
     - `docker commit yourContainerID ubuntu:latest` to update image
     - Now that you've updated the Ubuntu image with the latest changes you've made to your Ubuntu container, you can delete the container `docker rm containerID`
 
-## Operation Guide
+## Operation
 
 Now that you have an updated image of Ubuntu where you can clone git repositories of your C++ applications and run them on Valgrind, the following instructions allow you to do just that.
 
