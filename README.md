@@ -27,8 +27,8 @@ A container is when you create an instance of that image and run it. Meaning, yo
     - open up your Terminal
     - Run the following command `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 2. Install & Launch Docker
-    - `brew cask install docker` to install Docker
-    - `open /Applications/Docker.app` to launch it
+    - `brew cask install docker` to install
+    - `open /Applications/Docker.app` to launch
 3. Create an image of Ubuntu on Docker
     - `docker pull ubuntu`
     - `docker images` to see your Ubuntu's image id and copy it (henceforward addressed as `yourImageID`)
