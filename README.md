@@ -34,7 +34,7 @@ A container is when you create an instance of that image and run it. Meaning, yo
     - `docker images` to see your Ubuntu's image id and copy it (henceforward addressed as `yourImageID`)
 4. Create & run a container of that image
     - `docker run -it yourImageID`
-5. Update Ubuntu & install relevant components (Git, Valgrind, G++, Nano)
+5. Your containerized Ubuntu should've started. Update it & install relevant components (Git, Valgrind, G++, Nano)
     - `apt-get update`
     - `apt-get install git-core`
     - `apt-get install valgrind`
