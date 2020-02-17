@@ -11,7 +11,7 @@ By following these instructions, you'll execute the following.
 2. Install & Launch Docker
 3. Create an image of Ubuntu on Docker
 4. Create & run a container of that image
-5. Update Ubuntu & install relevant components (Git, Valgrind, G++, Nano)
+5. Update Ubuntu & install relevant components (Git, Valgrind, g++, Nano)
 6. Update Ubuntu image with the changes you've made to that container
 
 If you already have Homebrew and Docker installed on your machine, skip to Step 3 of Installation guide.</br>
