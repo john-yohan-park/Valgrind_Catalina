@@ -27,14 +27,14 @@ A container is when you create an instance of that image and run it. Meaning, yo
     - open up your Terminal
     - Run the following command `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 2. Install & Launch Docker
-    - `brew cask install docker` to install
-    - `open /Applications/Docker.app` to launch
+    - `brew cask install docker`
+    - `open /Applications/Docker.app`
 3. Create an image of Ubuntu on Docker
     - `docker pull ubuntu`
     - `docker images` to see your Ubuntu's image id and copy it (henceforward addressed as `yourImageID`)
 4. Create & run a container of that image
     - `docker run -it yourImageID`
-5. Your containerized Ubuntu should've started. Update it & install relevant components (Git, Valgrind, g++, Nano)
+5. Your containerized Ubuntu should have started. Update & install relevant components (Git, Valgrind, g++, Nano)
     - `apt-get update`
     - `apt-get install git-core`
     - `apt-get install valgrind`
@@ -44,25 +44,28 @@ A container is when you create an instance of that image and run it. Meaning, yo
 6. Update Ubuntu image with the changes you've made to your Ubuntu container
     - `docker ps -a` to see your Ubuntu's container id and copy it (henceforward addressed as `yourContainerID`)
     - `docker commit yourContainerID ubuntu:latest` to update image
-    - Now that you've updated the Ubuntu image with the latest changes you've made to your Ubuntu container, you can delete the container `docker rm containerID`
+    - Now that you've updated your Ubuntu image with the latest changes you've made to your container, you can delete the container `docker rm containerID`
 
 ## Operation
 
-Now that you have an updated image of Ubuntu where you can clone git repositories of your C++ applications and run them on Valgrind, the following instructions allow you to do just that.
+Now that you have an updated image of Ubuntu, we can clone git repositories of your C++ applications and run them on Valgrind.
 
-1. Launch Docker (`open /Applications/Docker.app`)
+1. Launch Docker
+    - `open /Applications/Docker.app`
 2. Get `yourImageID` and run its container
     - `docker images`
     - `docker run -it yourImageID`
-3. Create a folder in your Ubuntu and go to it
+3. Create a folder in your Ubuntu and go into it
     - `mkdir yourFolderName`
     - `cd yourFolderName`
-4. Open up a web browser, go to your GitHub account, copy the clone URL to your repository (henceforward addressed as `yourCloneURL`), and clone the repository to your Ubuntu.
+4. Fire up a web browser, go to your GitHub account, copy the clone URL to your repository and clone it to Ubuntu.
     - `git clone yourCloneURL`
 5. `cd` into the local instance of your repo. If you want to open up a file and make changes to it, all you have to do is `nano yourFileName.cpp`. If you've never used a command line text editor before, here's a useful guide for using Nano (https://www.hostinger.com/tutorials/how-to-install-and-use-nano-text-editor)
 6. After you're done making changes, `g++ *.cpp` to compile
-7. To run Valgrind, `valgrind ./a.out`
-8. After you're done working on your C++ application and have pushed your latest changes to GitHub, `exit` to leave Ubuntu.
+7. Run Valgrind
+    - `valgrind ./a.out`
+8. After you're done working on your C++ application and have pushed your latest changes to GitHub, leave Ubuntu.
+    - `exit`
 9. Get your container id, update your image, and delete the container
     - `docker ps -a`
     - `docker commit containerID ubuntu:latest`
@@ -70,6 +73,6 @@ Now that you have an updated image of Ubuntu where you can clone git repositorie
 
 ## Pros & Cons
 
-After having done or read all of this, you may have realized that there are some advantages and disadvantages to this approach. First, you can finally use Valgrind on your Mac! Well, kind of... You can finally run Valgrind on your Ubuntu which runs on Docker that runs on your Mac! Despite the fact that this approach involves downloading additional software, namely Docker and its Ubuntu container, this approach is alot faster and more space-efficient than deploying a full-on virtual machine to run your applications (https://www.youtube.com/watch?v=0qotVMX-J5s). Of course, this approach also means you'll be missing out on Ubuntu's graphical user interface, but `¯\_(ツ)_/¯`
+After having done or read all of this, you may have realized that there are some advantages and disadvantages to this approach. First, you can finally use Valgrind on your Mac! Well... sort of. You can finally run Valgrind on your Ubuntu which runs on Docker that runs on your Mac! Despite the fact that this approach involves downloading additional components, namely Docker and its Ubuntu container, this approach is alot faster and more memory-efficient than deploying a full-on virtual machine (https://www.youtube.com/watch?v=0qotVMX-J5s). Of course, this approach also means you'll be missing out on Ubuntu's graphical user interface, but `¯\_(ツ)_/¯`
 
-If you have any thoughts on this approach or how it can be improved, feel free to let me know! Feel free to add me on GitHub (follow4follow broski or brosephine), branch, fork, or clone this repo. 
+If you have any thoughts on this approach or how it can be improved, feel free to let me know! Feel free to add me on GitHub (follow4follow broski/brosephine), branch, fork, or clone this repo. 
